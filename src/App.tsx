@@ -2,7 +2,7 @@
 // MEGAPIXEL STUDIO VO - APPLICATION PRINCIPALE
 // ============================================
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Shield, LogOut, User, Settings, Radio, 
@@ -22,11 +22,8 @@ function App() {
   
   // État de l'application
   const [appMode, setAppMode] = useState<AppMode>('home');
-  const [lang, setLang] = useState<'ar' | 'en'>('ar');
   
   // État des sections (collapse/expand)
-  const [sectionDialectsOpen, setSectionDialectsOpen] = useState(true);
-  const [sectionVoicesOpen, setSectionVoicesOpen] = useState(true);
   const [sectionControlsOpen, setSectionControlsOpen] = useState(true);
   const [sectionTextOpen, setSectionTextOpen] = useState(true);
   
@@ -61,7 +58,6 @@ function App() {
   
   // Texte
   const [inputText, setInputText] = useState('');
-  const [processedText, setProcessedText] = useState('');
   
   // Toast
   const [toast, setToast] = useState<{ show: boolean; message: string; type: 'success' | 'error' | 'info' }>({

@@ -2,7 +2,7 @@
 // MEGAPIXEL STUDIO VO - SERVICE DE SÉCURITÉ
 // ============================================
 
-import type { AuthSession, UserRole } from '../types';
+import type { AuthSession } from '../types';
 
 // Clé secrète de l'application (à remplacer par variable d'environnement en production)
 const APP_SECRET = import.meta.env.VITE_APP_SECRET || 'MEGAPIXEL_STUDIO_VO_2026_SECURE_KEY';

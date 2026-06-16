@@ -9,6 +9,7 @@ import { SECURITY_CONFIG } from '../constants';
 
 const SESSION_KEY = 'megapixel_session';
 const CREDS_KEY = 'megapixel_admin_creds';
+const APP_SECRET = import.meta.env.VITE_APP_SECRET || 'MEGAPIXEL_STUDIO_VO_2026_SECURE_KEY';
 
 export const useAuth = () => {
   const [authStatus, setAuthStatus] = useState<AuthStatus>('checking');
