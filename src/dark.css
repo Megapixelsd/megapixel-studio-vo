@@ -1,0 +1,16 @@
+/* FORCE DARK BACKGROUND - MEGAPIXEL STUDIO VO */
+html, body, #root {
+  background-color: #050505 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh !important;
+}
+
+body {
+  background: #050505 !important;
+}
+
+#root {
+  background: #050505 !important;
+}
